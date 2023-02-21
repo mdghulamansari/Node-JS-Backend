@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <button onclick="chechEvenOdd()">Check Even or Odd Number</button>
+    <button onclick="printPattern()">Print Pattern</button>
+    <button onclick="printGrade()">Check Grade</button>
+    <br />
+    <h1 id="result"></h1>
+    <script>
+
+        function writeMessage(msg) {
+            document.getElementById('result').innerHTML = msg;
+        }
+
+        //Program 1
+        function isEven(num) {
+            return num % 2 == 0;
+        };
+
+        function chechEvenOdd() {
+            let num = parseInt(prompt("Enter any number: "));
+            if (isEven(num)) {
+                writeMessage(`${num} is even number.`);
+            } else {
+                writeMessage(`${num} is odd number.`);
+            }
+        };
+
+        // Program 2
+        function printPattern() {
+            let n = parseInt(prompt("Enter any number: "));
+            let ans = "<pre>";
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n - i - 1; j++) {
+                    ans += " ";
+                }
+                for (let j = 0; j <= i; j++) {
+                    ans += "*";
+                }
+                ans += "\n";
+            }
+            ans += "</pre>";
+            writeMessage(ans);
+        };
+
+
+
+        //Program 3
+        function isBetweenEqualTo(marks, lowest, highest) {
+            return marks >= lowest && marks <= highest;
+        }
+        function printGrade() {
+            let name = prompt("Enter Student's Name: ");
+            let marks = Number(prompt("Enter Student's Marks: "));
+            if (isBetweenEqualTo(marks, 97, 100)) {
+                writeMessage(`${name} has scored A+`);
+            } else if (isBetweenEqualTo(marks, 93, 96)) {
+                writeMessage(`${name} has scored A`);
+            } else if (isBetweenEqualTo(marks, 90, 92)) {
+                writeMessage(`${name} has scored A-`);
+            } else if (isBetweenEqualTo(marks, 87, 89)) {
+                writeMessage(`${name} has scored B+`);
+            } else if (isBetweenEqualTo(marks, 83, 86)) {
+                writeMessage(`${name} has scored B`);
+            } else if (isBetweenEqualTo(marks, 80, 82)) {
+                writeMessage(`${name} has scored B-`);
+            } else if (isBetweenEqualTo(marks, 77, 79)) {
+                writeMessage(`${name} has scored C+`);
+            } else if (isBetweenEqualTo(marks, 73, 76)) {
+                writeMessage(`${name} has scored C`);
+            } else if (isBetweenEqualTo(marks, 70, 72)) {
+                writeMessage(`${name} has scored C-`);
+            } else if (isBetweenEqualTo(marks, 67, 69)) {
+                writeMessage(`${name} has scored D`);
+            } else if (isBetweenEqualTo(marks, 65, 66)) {
+                writeMessage(`${name} has scored D`);
+            } else if (isBetweenEqualTo(marks, 0, 64)) {
+                writeMessage(`${name} has scored D`);
+            } else {
+                writeMessage("Invalid Marks");
+            }
+        };
+    </script>
+</body>
+
+</html>
