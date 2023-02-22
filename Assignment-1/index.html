@@ -15,7 +15,6 @@
     <br />
     <h1 id="result"></h1>
     <script>
-
         function writeMessage(msg) {
             document.getElementById('result').innerHTML = msg;
         }
@@ -27,6 +26,11 @@
 
         function chechEvenOdd() {
             let num = parseInt(prompt("Enter any number: "));
+            if (isNaN(num)) {
+                writeMessage("Please enter number only.");
+                return;
+            }
+
             if (isEven(num)) {
                 writeMessage(`${num} is even number.`);
             } else {
@@ -37,6 +41,15 @@
         // Program 2
         function printPattern() {
             let n = parseInt(prompt("Enter any number: "));
+            if (isNaN(n)) {
+                writeMessage("Please enter number only.");
+                return;
+            }
+            if (n <= 0) {
+                writeMessage("Please enter only +ve number.");
+                return;
+            }
+
             let ans = "<pre>";
             for (let i = 0; i < n; i++) {
                 for (let j = 0; j < n - i - 1; j++) {
@@ -59,7 +72,20 @@
         }
         function printGrade() {
             let name = prompt("Enter Student's Name: ");
+            if (!name) {
+                writeMessage("Please enter a name.");
+                return;
+            }
+            if (/\d/.test(name)) {
+                writeMessage(`${name} is not a valid name.`);
+                return;
+            }
             let marks = Number(prompt("Enter Student's Marks: "));
+            if (isNaN(marks)) {
+                writeMessage("Please enter number only.");
+                return;
+            }
+
             if (isBetweenEqualTo(marks, 97, 100)) {
                 writeMessage(`${name} has scored A+`);
             } else if (isBetweenEqualTo(marks, 93, 96)) {
