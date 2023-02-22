@@ -1,4 +1,13 @@
 const printPattern = (n) => {
+  if (isNaN(n)) {
+    process.stdout.write("Please enter number only.");
+    return;
+  }
+  if (n <= 0) {
+    process.stdout.write("Please enter only +ve number.");
+    return;
+  }
+
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n - i - 1; j++) {
       process.stdout.write(" ");

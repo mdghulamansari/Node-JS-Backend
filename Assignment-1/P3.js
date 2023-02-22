@@ -2,6 +2,19 @@ const isBetweenEqualTo = (marks, lowest, highest) =>
   marks >= lowest && marks <= highest;
 
 const printGrade = (name, marks) => {
+  if (!name) {
+    console.log("Please enter a name.");
+    return;
+  }
+  if (/\d/.test(name)) {
+    console.log(`${name} is not a valid name.`);
+    return;
+  }
+  if (isNaN(marks)) {
+    console.log("Please enter number only.");
+    return;
+  }
+
   if (isBetweenEqualTo(marks, 97, 100)) {
     console.log(`${name} has scored A+`);
   } else if (isBetweenEqualTo(marks, 93, 96)) {

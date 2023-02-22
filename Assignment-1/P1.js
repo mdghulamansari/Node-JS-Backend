@@ -3,6 +3,10 @@ const isEven = (num) => {
 };
 
 const chechEvenOdd = (num) => {
+  if (isNaN(num)) {
+    console.log("Please enter number only.");
+    return;
+  }
   if (isEven(num)) {
     console.log(`${num} is even number.`);
   } else {
