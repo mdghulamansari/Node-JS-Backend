@@ -1,3 +1,4 @@
 # [NodeJS Backend](https://mdghulamansari.github.io/Node-JS-Backend)
 
 - [Assignment-1](https://mdghulamansari.github.io/Node-JS-Backend/Assignment-1/index.html)
+- [Assignment-2](https://mdghulamansari.github.io/Node-JS-Backend/Assignment-2/index.html)
