@@ -1,0 +1,322 @@
+{
+    "API": [
+        {
+            "request": {
+                "Request URL": "https: //o1432095.ingest.sentry.io/api/4504633377554432/envelope/?sentry_key=8439d36d8c454d3d84ea3f63853baee5&sentry_version=7&sentry_client=sentry.javascript.nextjs%2F7.36.0",
+                "method": "POST",
+                "headers": {
+                    "accept": "*/*",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "content-type": "text/plain;charset=UTF-8",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "cross-site",
+                    "Referer": "https://wasalt.com/",
+                    "Referrer-Policy": "origin"
+                },
+                "body": "{\"sent_at\":\"2023-02-23T06:46:39.002Z\",\"sdk\":{\"name\":\"sentry.javascript.nextjs\",\"version\":\"7.36.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"88173e05d1f640f98594c33c94b2a4aa\",\"init\":true,\"started\":\"2023-02-23T06:46:39.001Z\",\"timestamp\":\"2023-02-23T06:46:39.001Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"K8JN9P8u9FfCIye0igneR\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\"}}"
+            },
+            "response": {}
+        },
+        {
+            "request": {
+                "Request URL": "https://cdn.segment.com/v1/projects/zZ3kZjMkduQMgOw00I2i9Ba87UPCRUFu/settings",
+                "headers": {
+                    "accept": "*/*",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "cross-site"
+                },
+                "referrer": "https://wasalt.com/",
+                "referrerPolicy": "strict-origin-when-cross-origin",
+                "body": null,
+                "method": "GET",
+                "mode": "cors",
+                "credentials": "omit"
+            },
+            "response": {
+                "integrations": {
+                    "Segment.io": {
+                        "apiKey": "zZ3kZjMkduQMgOw00I2i9Ba87UPCRUFu",
+                        "unbundledIntegrations": [],
+                        "addBundledMetadata": true,
+                        "maybeBundledConfigIds": {},
+                        "versionSettings": {
+                            "version": "4.4.7",
+                            "componentTypes": [
+                                "browser"
+                            ]
+                        }
+                    }
+                },
+                "plan": {
+                    "track": {
+                        "__default": {
+                            "enabled": true,
+                            "integrations": {}
+                        }
+                    },
+                    "identify": {
+                        "__default": {
+                            "enabled": true
+                        }
+                    },
+                    "group": {
+                        "__default": {
+                            "enabled": true
+                        }
+                    }
+                },
+                "edgeFunction": {},
+                "analyticsNextEnabled": true,
+                "middlewareSettings": {},
+                "enabledMiddleware": {},
+                "metrics": {
+                    "sampleRate": 0.1
+                },
+                "legacyVideoPluginsEnabled": false,
+                "remotePlugins": []
+            }
+        },
+        {
+            "request": {
+                "Request URL": "https://api.wasalt.com/misc/v1/get-banner-by-page",
+                "headers": {
+                    "accept": "*/*",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "content-type": "application/json",
+                    "locale": "ar",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "same-site",
+                    "Referer": "https://wasalt.com/",
+                    "Referrer-Policy": "strict-origin-when-cross-origin"
+                },
+                "body": "{\"platform\":\"web\",\"page\":\"home\",\"slot\":2}",
+                "method": "POST"
+            },
+            "response": {
+                "status": true,
+                "data": {
+                    "banners": [
+                        {
+                            "id": "1",
+                            "card_type": "Muhaktat",
+                            "cta_link": "https://wasalt.app.link/nBeJ5tJqqlb",
+                            "cta_text": "تحميل تطبيق وصلت",
+                            "position": "2",
+                            "preview": "Preview",
+                            "subtitle": "",
+                            "title": " اكتشف مجموعة حصرية من المخططات واستثمر بها!"
+                        }
+                    ]
+                },
+                "message": "عملية ناجحة"
+            }
+        },
+        {
+            "request": {
+                "Request URL": "https://api.wasalt.com/misc/v1/get-banner-by-page",
+                "headers": {
+                    "accept": "*/*",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "content-type": "application/json",
+                    "locale": "ar",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "same-site",
+                    "Referer": "https://wasalt.com/",
+                    "Referrer-Policy": "strict-origin-when-cross-origin"
+                },
+                "body": "{\"platform\":\"web\",\"page\":\"home\",\"slot\":1}",
+                "method": "POST"
+            },
+            "response": {
+                "status": true,
+                "data": {
+                    "banners": [
+                        {
+                            "id": "1",
+                            "card_type": "Muhaktat",
+                            "cta_link": "",
+                            "logo": "https://cdn.wasalt.com/icons/v1/property_4.jpg",
+                            "position": "1",
+                            "preview": "Preview",
+                            "title": "المزادات",
+                            "cta_text": "اكتشفالمزادات",
+                            "subtitle": "شارك في مزاداتنا الالكترونية الخاصة بالعقارات!"
+                        }
+                    ]
+                },
+                "message": "عملية ناجحة"
+            }
+        },
+        {
+            "request": {
+                "Request URL": "https://api.wasalt.com/misc/v1/get-banner-by-page",
+                "headers": {
+                    "accept": "*/*",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "content-type": "application/json",
+                    "locale": "ar",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "same-site",
+                    "Referer": "https://wasalt.com/",
+                    "Referrer-Policy": "strict-origin-when-cross-origin"
+                },
+                "body": "{\"platform\":\"web\",\"page\":\"home\",\"slot\":3}",
+                "method": "POST"
+            },
+            "response": {
+                "status": true,
+                "data": {
+                    "banners": [
+                        {
+                            "id": "1",
+                            "card_type": "مخطط",
+                            "cta_link": "https://wasalt.com/en/user/postpropertyUserFlow",
+                            "cta_route": "MuhakatatPage",
+                            "cta_text": "شاهد المخطط",
+                            "position": "3",
+                            "preview": "Preview",
+                            "title": "حمل تطبيقنا",
+                            "subtitle": "اضغط على الرابط ادناه لتحميل تطبيق وصلت وتصفح الآلاف من العقارات",
+                            "logo": "https://cdn.wasalt.com/icons/v1/down_load_1.jpg"
+                        }
+                    ]
+                },
+                "message": "عملية ناجحة"
+            }
+        },
+        {
+            "request": {
+                "Request URL": "https://api.wasalt.com/misc/v1/user-activity",
+                "headers": {
+                    "accept": "*/*",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "content-type": "application/json",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "same-site",
+                    "Referer": "https://wasalt.com/",
+                    "Referrer-Policy": "strict-origin-when-cross-origin"
+                },
+                "body": null,
+                "method": "POST"
+            },
+            "response": {
+                "status": true,
+                "data": {
+                    "triggerCaptcha": false
+                },
+                "message": ""
+            }
+        },
+        {
+            "request": {
+                "Request URL": "https://in.hotjar.com/api/v2/client/sites/2811594/visit-data?sv=6",
+                "headers": {
+                    "accept": "*/*",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "content-type": "text/plain; charset=UTF-8",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "cross-site",
+                    "Referer": "https://wasalt.com/",
+                    "Referrer-Policy": "strict-origin-when-cross-origin"
+                },
+                "body": "{\"r_value\":0.8790436005625879,\"is_vpv\":false,\"session_only\":false,\"rec_value\":0.007633587786259541,\"user_id\":\"86837037-75dd-5bd8-95a3-0786449c263a\"}",
+                "method": "POST"
+            },
+            "response": {
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+                "success": true
+            }
+        },
+        {
+            "request": {
+                "Request URL": "https://www.google-analytics.com/j/collect?v=1&_v=j99&a=1893901295&t=pageview&_s=1&dl=https%3A%2F%2Fwasalt.com%2F&dr=https%3A%2F%2Fwww.google.com%2F&ul=en-us&de=UTF-8&dt=%D9%85%D9%88%D9%82%D8%B9%20%D9%88%D8%B5%D9%84%D8%AA%20%7C%20%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%20%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9&sd=24-bit&sr=1536x864&vp=1519x251&je=0&_u=SACAAEABQAAAACAAI~&jid=1451518492&gjid=2074729906&cid=1798190251.1676021905&tid=UA-208538146-1&_gid=337820175.1677060002&_r=1&_slc=1&gtm=45He32f0n81PNDH9D6&cd4=Home&cd5=&cd6=domestic&cd7=0&cd9=&cd11=&z=1425393399",
+                "headers": {
+                    "accept": "*/*",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "content-type": "text/plain",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "cross-site",
+                    "Referer": "https://wasalt.com/",
+                    "Referrer-Policy": "strict-origin-when-cross-origin"
+                },
+                "body": "",
+                "method": "POST"
+            },
+            "response": "2d,x"
+        },
+        {
+            "request": {
+                "Request URL": "https://n.clarity.ms/collect",
+                "headers": {
+                    "accept": "application/x-clarity-gzip",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "no-cache",
+                    "pragma": "no-cache",
+                    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "cross-site"
+                },
+                "referrer": "https://wasalt.com/",
+                "referrerPolicy": "strict-origin-when-cross-origin",
+                "body": "\u001f\b\u0000\u0000\u0000\u0000\u0000\u0000\n­[oÛ6\u0014ÿ ½2\u000eïìà\u0007Çi´izI\u00174ó\u0002A±\u0015G«#»²Ô\u001dößw(Ò¸Å°-\u000e`ê#Ïçòq\u0011?Æi¢\u0012\u001a\u0013CfÂ\u0010\rLøêN>ð\u0002\u001eL\u001aøþ¶*oK\u001c°u±ØHôÄ9ÊOR \b¤\"¥Ä\u0002Ú\u0001é\u0000g\u0001\u0000w\u0004M\u0005\u0019áêvÄð@S¬ÓNJ:ÍÊ@Ó£9\rD§ô¶Ó¬î\bsÄtRÒÙ2øè\twR¦\u000f¹(Lo#²\u0002gÝôqy!Ó%£]¡¥1ò§\u0015ðGùÓºüi5°ìIoÙåO«>J!\u001c1ªËMë¯Ö½)\u0000'eÐ!\u001d­\u0005ëwË9^÷Éð«T·\u0017< \u0003\u000bÜù`\u0006{HEÓo¢TÆ¡¾b0=\u000eÉNJ['\fð\u0001¢\u000e\r6;5\u000eõ; ¨t¨ß\u0003%[¿\fM»liç¡½_8v÷ùJ©ìM\u0002Pç\u0019ím\u0002¸\fíË\\u(@G\u0004áp\u0014ðE¤l1v0T¨Ý©\u000eêPþ°\u0003òÁJ/y5XiÜö kO¬ë6©O \u0010; 2O!MF¤¹Ø¡Ë\u001dÖ¹Þ¡SìÈ\u0016Tïb¸4;V*.\u0007Ð\u0017§CqáûÈ\fcWÒ7Nú$ÉØ:Cè¬\u000246ó`\u0017#T<ô\u0018@£|'À\u0010º\u0013Â¸v'I)ì| S§®°º|>Ìì\u0012\u0006\u0010|÷(9î,t-ÕAEû\u000erÖm+Qß\böðrÔö\u001c\u000b­eZjð´Ç¦á¾|¤H¥¥ÌQ)<V\u0015\u0007ßtÌÓvÀ½5\u001d¨ÆÝaà5\u0018ê©\u001d° Á\u0004\u001fÀ1s*p\u0014¡\u0014ïÈ\u0018ÊtËåÕâ>áK×È\f¶±¯*\u0002þ<·×(v f\u0003\faTh7\u0002Ú#?¬V¨Üî°ÜØ\u000bb\u0015á\u0000­¢0Åó\u0012\u0007X\u000fFtkÄ·­2:Ìí8^·wq;'IJ,åøðø\u001cïíÙ2ßlFoëò6¯·§ù}Vå÷WyeË²úe¼:Ë\u0016ÑÎéÅMsSäó\u0002\u001fäxrq\u0011ÅØ\u0000öèÓ­þ)'è\u001e\u0015\u0018­¢øtùÚBS`ou\u0012\u001f¿þ\u0005£ØÔ³MÑöQtQlö\u001fòM¾lö«Åj/¯Íý\"/$úÁ4ýâ´ü@\u0005.x(çÍÍ\b´}ó¹)¬W#ïGñ¼­æeµ\u0018åm5³ oò=|3Z ËñAWóÌ*Ì²óòâà«µØlÅh¶Z®êgQ\u000b6ë¼.ªæçPi3§1ÂNC9[UÎ¯È\u000e÷òõzo¾z¨«|\u001eµª6Y«+[ßÕëeeoóq³îªyq]VE·è:£<ËæÍõûIÜ\u001a\u0001\u0000\u0012\u001füúáÃÓÎÚ\u0019\u0006UÍýV\u00043ãõú ©²ìâ\u0014N0eméáÕ5¥êò{^®ëÕu¹,þ½Ø\u000b­\u0011k,>{;þMñ¥É²\u0017_ß½k¢G\u0013­ÅãêC;xññ\u0002ëÞêcxI\fêòw\u001awê81¶´56-^5?t±\\]ý8AÓÖ5\u0015mÕÅõh¿¨öw\u0007ü¸{Î\u000eª£-½²\u001e-Ú¦Mc\u0014ì~ñl77vrô\u001ah\u0004tb\u0012Ê\f\u000e\"\u0015DIÀou.'*bí¶\u000b`\u0002¼]0\u0003y®&\u0010Ã\nêþk+»^}*F?É\u0017i\u0007öÐÙb¯GÏwXé=¿-¢^âof\u0004i]ÇQ\u001bi£±QM\u0005\u001e½6\u0016J#&&Õ\u0013\u001cIðì±@§\f]L\u0004\u0015\u0016¦RÚ§TPt8ÁÃ(\u0002\b&¬×Bãl½\u0013\u000eÜ>Ê\u0004ßòÂ*\u0018Æ\u0002QAwoÒ{qNÙ\u0011¥çî\u00010Å\u000bR2l70¼\u0004\u0019uQL9õx­àýÍ\u0018\u000f¿ïvù÷*jÿÜ\u0017N¾Ã_åû0×Ò·W·E\u00108;ûø&ûf~Ó³OÛ,;zõðòcÂà}Çö-Ä'Ç§¯âËË¿þ\u0006ìH-\u000e\u0000\u0000",
+                "method": "POST",
+                "mode": "cors",
+                "credentials": "include"
+            },
+            "response": {},
+            "myNote": "This request calls whenever user click or scroll"
+        }
+    ]
+}
