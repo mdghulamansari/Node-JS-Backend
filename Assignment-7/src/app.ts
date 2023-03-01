@@ -69,6 +69,11 @@ const app = async () => {
 };
 
 (async () => {
-  await sequelize.authenticate();
-  app();
+  try {
+    await sequelize.authenticate();
+    await sequelize.sync();
+    app();
+  } catch (err: any) {
+    console.log(err.message);
+  }
 })();
