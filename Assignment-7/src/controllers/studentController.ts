@@ -2,6 +2,9 @@ import Student from "../models/student";
 
 export const getStudent = async (id: number): Promise<Student | null> => {
   try {
+    if (isNaN(id)) {
+      throw new Error("\n\nStudent ID is not valid.");
+    }
     const student = await Student.findByPk(id);
     if (!student) {
       throw new Error("\nStudent ID not found.");
@@ -45,6 +48,9 @@ export const updateStudent = async ({
   gender,
 }: Student): Promise<Student | null> => {
   try {
+    if (isNaN(id)) {
+      throw new Error("\n\nStudent ID is not valid.");
+    }
     const student = await Student.findByPk(id);
     if (!student) {
       throw new Error("\nStudent Id not found.");
@@ -60,6 +66,9 @@ export const updateStudent = async ({
 
 export const deleteStudent = async (id: number): Promise<Student | null> => {
   try {
+    if (isNaN(id)) {
+      throw new Error("\n\nStudent ID is not valid.");
+    }
     const student = await Student.findByPk(id);
     if (!student) {
       throw new Error("\nStudent Id not found.");
