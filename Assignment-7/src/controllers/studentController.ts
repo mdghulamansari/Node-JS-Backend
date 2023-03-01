@@ -18,7 +18,9 @@ export const getStudent = async (id: number): Promise<Student | null> => {
 
 export const getStudents = async (): Promise<Student[] | null> => {
   try {
-    const students: Student[] = await Student.findAll();
+    const students: Student[] = await Student.findAll({
+      order: [["id", "ASC"]],
+    });
     return students;
   } catch (err: any) {
     console.log(err.message);
