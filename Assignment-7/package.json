@@ -6,6 +6,7 @@
     "start": "tsc && node ./dist/app.js"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "prompt-sync": "^4.2.0",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^6.29.0",
