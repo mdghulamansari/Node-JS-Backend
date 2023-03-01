@@ -7,6 +7,10 @@ export default class Student extends Model {
     allowNull: false,
     validate: {
       notNull: { msg: "Name is required" },
+      is: {
+        args: [/^[a-z\s]+$/i],
+        msg: "Name is not valid"
+      }
     },
   })
   name: string;
