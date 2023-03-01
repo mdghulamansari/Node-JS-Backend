@@ -69,6 +69,6 @@ const app = async () => {
 };
 
 (async () => {
-  await sequelize.sync();
+  await sequelize.authenticate();
   app();
 })();
