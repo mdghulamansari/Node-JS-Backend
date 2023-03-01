@@ -9,8 +9,8 @@ export default class Student extends Model {
       notNull: { msg: "Name is required" },
       is: {
         args: [/^[a-z\s]+$/i],
-        msg: "Name is not valid"
-      }
+        msg: "Name is not valid",
+      },
     },
   })
   name: string;
@@ -24,6 +24,10 @@ export default class Student extends Model {
       min: {
         args: [1],
         msg: "Age should be greater than 0.",
+      },
+      max: {
+        args: [110],
+        msg: "Age should be less than 110.",
       },
     },
   })
