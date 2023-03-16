@@ -4,7 +4,6 @@ dotEnv.config();
 import { Sequelize } from "sequelize-typescript";
 import { Dialect } from "sequelize";
 import path from "path";
-import logger from "../utils/logger";
 
 const sequelize = new Sequelize({
   database: process.env.DATABASE_NAME,
